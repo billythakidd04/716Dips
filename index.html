@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,10 +34,17 @@
 </head>
 <!-- NAVBAR
 ================================================== -->
-<body><!--
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=274908996034604&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="navbar-wrapper">
     <div class="container">
-
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -51,7 +58,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="#">Home</a></li><!--
                         <li><a href="#services">Services</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -66,14 +73,14 @@
                                 <li><a href="#">Separated link</a></li>
                                 <li><a href="#">One more separated link</a></li>
                             </ul>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
         </div>
 
     </div>
-</div>-->
+</div>
 
 
 <!-- Carousel
@@ -129,25 +136,31 @@
 
 <div class="container marketing">
 
-    <!-- Three columns of text below the carousel
+    <!-- Three columns of text below the carousel -->
     <div class="row">
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <img class="img-circle" src="img/7.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>Services</h2>
+            <p>Premium hydro graphics, water transfer printing, hydro dipping. Whatever you want to call it, we do it. This is <em>not</em> the same as chroming it is more similar to painting or airbrushing. If you have any questions please contact us.</p>
+            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> <!-- hidden untill services page is made -->
         </div>
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <img class="img-circle" src="img/1.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>Pricing</h2>
+            <p><a href="img/PriceSheet.jpg" target="_blank">Click here</a> for our price sheet.*<br/><br/>*All prices are approximate and depend on the complexity of the part being dipped and the design chosen.</p>
+            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> <!-- hidden untill about page is made -->
         </div>
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <img class="img-circle" src="img/6.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>Contact</h2>
+            <p>You can reach us via the following:<br/>
+                <ul class="text-left">
+                    <li>Phone: 716-236-8347</li>
+                    <li>Email: <a href="mailto:716dips@gmail.com">716dips@gmail.com</a></li>
+                    <li>Facebook: <a href="http://www.716dips.com">facebook.com/716dips</a></li>
+                </ul>
+            </p>
+            <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p><!-- hidden until contact page is made -->
         </div>
     </div><!-- /.row -->
 
@@ -192,11 +205,12 @@
 
     <hr class="featurette-divider">
 
-    /END THE FEATURETTES -->
+   <!-- /END THE FEATURETTES -->
 
 
     <!-- FOOTER -->
     <footer class="footer">
+        <div class="fb-like" data-href="http://facebook.com/716dips" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
         <p>&copy; 2014 716Dips, Inc.<!-- &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>--></p>
     </footer>
 

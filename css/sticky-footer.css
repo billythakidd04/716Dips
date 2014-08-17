@@ -7,7 +7,7 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
 }
 
 .footer {
@@ -18,18 +18,4 @@ body {
     /* Set the fixed height of the footer here */
     height: 60px;
     text-align: center;
-}
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-.container {
-    width: auto;
-    max-width: 680px;
-    padding: 0 15px;
-}
-
-.container .text-muted {
-    margin: 20px 0;
 }
