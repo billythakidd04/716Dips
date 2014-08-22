@@ -1,0 +1,8 @@
+#links
+{
+    margin: 150px 50px;
+}
+#links > a > img
+{
+    max-height: 200px;
+}

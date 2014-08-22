@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>716Dips</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for carousel -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
+    <!-- Custom styles for gallery -->
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <!-- Custom styles for sticky footer-->
+    <link href="css/sticky-footer.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=274908996034604&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar-wrapper">
+    <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">716 Dips</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="#">Photo Gallery</a></li><!--
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Films</a></li>
+                                <li><a href="#">Sample Work</a></li><!--
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Photo Gallery
+================================================== -->
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="links">
+    <a href="img/bluewithspongebob.jpg" title="Blue with sponge bob" data-gallery>
+        <img src="img/bluewithspongebob.jpg" alt="Blue with sponge bob">
+    </a>
+    <a href="img/bluewithspongebob.jpg" title="img/bluewithspongebob.jpg" data-gallery>
+        <img src="img/bluewithspongebob.jpg"/>
+    </a>
+    <a href="img/bluewithspongebob2.jpg" title="img/bluewithspongebob2.jpg" data-gallery>
+        <img src="img/bluewithspongebob2.jpg"/>
+    </a>
+    <a href="img/bluewithwalkingdead.jpg" title="img/bluewithwalkingdead.jpg" data-gallery>
+        <img src="img/bluewithwalkingdead.jpg"/>
+	</a>
+    <a href="img/bluewithwalkingdead2.jpg" title="img/bluewithwalkingdead2.jpg" data-gallery>
+        <img src="img/bluewithwalkingdead2.jpg"/>
+	</a>
+    <a href="img/bluewithwalkingdead3.jpg" title="img/bluewithwalkingdead3.jpg" data-gallery>
+        <img src="img/bluewithwalkingdead3.jpg"/>
+	</a>
+    <a href="img/glowinthedarkwithwildstyle.png" title="img/glowinthedarkwithwildstyle.png" data-gallery>
+        <img src="img/glowinthedarkwithwildstyle.png"/>
+	</a>
+    <a href="img/glowinthedarkwithwildstyle2.png" title="img/glowinthedarkwithwildstyle2.png" data-gallery>
+        <img src="img/glowinthedarkwithwildstyle2.png"/>
+	</a>
+    <a href="img/greenwithclearcarbon.jpg" title="img/greenwithclearcarbon.jpg" data-gallery>
+        <img src="img/greenwithclearcarbon.jpg"/>
+	</a>
+    <a href="img/greenwithclearcarbon2.jpg" title="img/greenwithclearcarbon2.jpg" data-gallery>
+        <img src="img/greenwithclearcarbon2.jpg"/>
+	</a>
+    <a href="img/lightbluewithskulls.jpg" title="img/lightbluewithskulls.jpg" data-gallery>
+        <img src="img/lightbluewithskulls.jpg"/>
+	</a>
+    <a href="img/metalicbluewithflameskulls.jpg" title="img/metalicbluewithflameskulls.jpg" data-gallery>
+        <img src="img/metalicbluewithflameskulls.jpg"/>
+	</a>
+    <a href="img/metalicbluewithflameskulls2.jpg" title="img/metalicbluewithflameskulls2.jpg" data-gallery>
+        <img src="img/metalicbluewithflameskulls2.jpg"/>
+	</a>
+    <a href="img/metalicbluewithflameskulls3.jpg" title="img/metalicbluewithflameskulls3.jpg" data-gallery>
+        <img src="img/metalicbluewithflameskulls3.jpg"/>
+	</a>
+    <a href="img/metalicbluewithflameskulls4.jpg" title="img/metalicbluewithflameskulls4.jpg" data-gallery>
+        <img src="img/metalicbluewithflameskulls4.jpg"/>
+	</a>
+    <a href="img/metalicbluewithflameskulls5.png" title="img/metalicbluewithflameskulls5.png" data-gallery>
+        <img src="img/metalicbluewithflameskulls5.png"/>
+	</a>
+    <a href="img/orangewithsnakeskin.jpg" title="img/orangewithsnakeskin.jpg" data-gallery>
+        <img src="img/orangewithsnakeskin.jpg"/>
+	</a>
+    <a href="img/orangewithsnakeskin2.jpg" title="img/orangewithsnakeskin2.jpg" data-gallery>
+        <img src="img/orangewithsnakeskin2.jpg"/>
+	</a>
+    <a href="img/pinkwithzebra.png" title="img/pinkwithzebra.png" data-gallery>
+        <img src="img/pinkwithzebra.png"/>
+	</a>
+    <a href="img/redwithzombies.jpg" title="img/redwithzombies.jpg" data-gallery>
+		<img src="img/redwithzombies.jpg"/>
+	</a>
+    <a href="img/silverwithblueflames.jpg" title="img/silverwithblueflames.jpg" data-gallery>
+		<img src="img/silverwithblueflames.jpg"/>
+	</a>
+    <a href="img/silverwithpebble_whitewithcheetah.jpg" title="img/silverwithpebble_whitewithcheetah.jpg" data-gallery>
+		<img src="img/silverwithpebble_whitewithcheetah.jpg"/>
+	</a>
+    <a href="img/whitewithcreepyclowns.jpg" title="img/whitewithcreepyclowns.jpg" data-gallery>
+		<img src="img/whitewithcreepyclowns.jpg"/>
+	</a>
+    <a href="img/whitewithcreepyclowns2.jpg" title="img/whitewithcreepyclowns2.jpg" data-gallery>
+		<img src="img/whitewithcreepyclowns2.jpg"/>
+	</a>
+    <a href="img/whitewithcreepyclownsenginecover.jpg" title="img/whitewithcreepyclownsenginecover.jpg" data-gallery>
+		<img src="img/whitewithcreepyclownsenginecover.jpg"/>
+	</a>
+    <a href="img/whitewithcreepyclownsenginecover2.png" title="img/whitewithcreepyclownsenginecover2.png" data-gallery>
+		<img src="img/whitewithcreepyclownsenginecover2.png"/>
+	</a>
+    <a href="img/whitewithhellokitty.png" title="img/whitewithhellokitty.png" data-gallery>
+		<img src="img/whitewithhellokitty.png"/>
+	</a>
+    <a href="img/whitewithrealcamo.jpg" title="img/whitewithrealcamo.jpg" data-gallery>
+		<img src="img/whitewithrealcamo.jpg"/>
+	</a>
+    <a href="img/whitewithrealcamo2.jpg" title="img/whitewithrealcamo2.jpg" data-gallery>
+		<img src="img/whitewithrealcamo2.jpg"/>
+	</a>
+    <a href="img/whitewithrealcamo3.jpg" title="img/whitewithrealcamo3.jpg" data-gallery>
+		<img src="img/whitewithrealcamo3.jpg"/>
+	</a>
+    <a href="img/whitewithskullsandroses.jpg" title="img/whitewithskullsandroses.jpg" data-gallery>
+		<img src="img/whitewithskullsandroses.jpg"/>
+	</a>
+    <a href="img/whitewithskullsandroses2.jpg" title="img/whitewithskullsandroses2.jpg" data-gallery>
+		<img src="img/whitewithskullsandroses2.jpg"/>
+	</a>
+    <a href="img/whitewithstickerbombenginebay.jpg" title="img/whitewithstickerbombenginebay.jpg" data-gallery>
+		<img src="img/whitewithstickerbombenginebay.jpg"/>
+	</a>
+    <a href="img/whitewithstickerbombenginebay2.jpg" title="img/whitewithstickerbombenginebay2.jpg" data-gallery>
+		<img src="img/whitewithstickerbombenginebay2.jpg"/>
+	</a>
+    <a href="img/whitewithstickerbombintake.jpg" title="img/whitewithstickerbombintake.jpg" data-gallery>
+		<img src="img/whitewithstickerbombintake.jpg"/>
+	</a>
+    <a href="img/whitewithstickerbombintake2.jpg" title="img/whitewithstickerbombintake2.jpg" data-gallery>
+		<img src="img/whitewithstickerbombintake2.jpg"/>
+	</a>
+    <a href="img/whitewithstickerbombintake3.jpg" title="img/whitewithstickerbombintake3.jpg" data-gallery>
+		<img src="img/whitewithstickerbombintake3.jpg"/>
+	</a>
+    <a href="img/whitewithstickerbombintake4.jpg" title="img/whitewithstickerbombintake4.jpg" data-gallery>
+		<img src="img/whitewithstickerbombintake4.jpg"/>
+	</a>
+    <a href="img/whitewithstickerbombstrutbar.jpg" title="img/whitewithstickerbombstrutbar.jpg" data-gallery>
+		<img src="img/whitewithstickerbombstrutbar.jpg"/>
+	</a>
+    <a href="img/whitewithstickerbombvalvecover.jpg" title="img/whitewithstickerbombvalvecover.jpg" data-gallery>
+		<img src="img/whitewithstickerbombvalvecover.jpg"/>
+	</a>
+</div>
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<!--
+
+<div class="container marketing">
+
+    &lt;!&ndash; Three columns of text below the carousel &ndash;&gt;
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="img-circle" src="img/whitewithstickerbombenginebay.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>Services</h2>
+            <p>Premium hydro graphics, water transfer printing, hydro dipping. Whatever you want to call it, we do it. This is <em>not</em> the same as chroming it is more similar to painting or airbrushing. If you have any questions please contact us.</p>
+            &lt;!&ndash; <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> &lt;!&ndash; hidden untill services page is made &ndash;&gt;
+        </div>
+        <div class="col-lg-4">
+            <img class="img-circle" src="img/whitewithskullsandroses2.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>Pricing</h2>
+            <p><a href="img/PriceSheet.jpg" target="_blank">Click here</a> for our price sheet.*<br/><br/>*All prices are approximate and depend on the complexity of the part being dipped and the design chosen.</p>
+            &lt;!&ndash; <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> &lt;!&ndash; hidden untill about page is made &ndash;&gt;
+        </div>
+        <div class="col-lg-4">
+            <img class="img-circle" src="img/pinkwithzebra.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>Contact</h2>
+            <p>You can reach us via the following:<br/>
+                <ul class="text-left">
+                    <li>Phone: 716-236-8347</li>
+                    <li>Email: <a href="mailto:716dips@gmail.com">716dips@gmail.com</a></li>
+                    <li>Facebook: <a href="http://www.716dips.com">facebook.com/716dips</a></li>
+                </ul>
+            </p>
+            &lt;!&ndash; <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>&lt;!&ndash; hidden until contact page is made &ndash;&gt;
+        </div>
+    </div>&lt;!&ndash; /.row &ndash;&gt;
+
+
+    &lt;!&ndash; START THE FEATURETTES
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+   &lt;!&ndash; /END THE FEATURETTES &ndash;&gt;
+-->
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="fb-like" data-href="http://facebook.com/716dips" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        <p>&copy; 2014 716Dips, Inc.<!-- &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>--></p>
+    </footer>
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/docs.min.js"></script>
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+</body>
+</html>
